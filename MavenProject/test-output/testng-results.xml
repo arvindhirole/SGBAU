@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-21T18:46:48 OMST" name="Suite" finished-at="2022-09-21T18:49:32 OMST" duration-ms="163924">
+    <groups>
+    </groups>
+    <test started-at="2022-09-21T18:46:48 OMST" name="OperaBrowser" finished-at="2022-09-21T18:48:49 OMST" duration-ms="121388">
+      <class name="SGBAUTest.Administration">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:46:48 OMST" name="launchbrowser" finished-at="2022-09-21T18:47:39 OMST" duration-ms="51827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="objectsPOMclass()[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:39 OMST" name="objectsPOMclass" finished-at="2022-09-21T18:48:40 OMST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectsPOMclass -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:40 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:40 OMST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="AdministrationLogin()[pri:1, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:40 OMST" name="AdministrationLogin" finished-at="2022-09-21T18:48:40 OMST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdministrationLogin -->
+        <test-method is-config="true" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:40 OMST" name="TakeScreenshot" finished-at="2022-09-21T18:48:40 OMST" duration-ms="660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AdministrationLogin status=SUCCESS method=Administration.AdministrationLogin()[pri:1, instance:SGBAUTest.Administration@7c7b252e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:41 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:41 OMST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="AdministrationLoginValidation()[pri:2, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:41 OMST" name="AdministrationLoginValidation" finished-at="2022-09-21T18:48:44 OMST" duration-ms="3048" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
+  (Session info: chrome=105.0.5195.102)
+  (Driver info: operadriver=105.0.5195.102 (4c16f5ffcc2da70ee2600d5db77bed423ac03a5a-refs/branch-heads/5195_55@{#4}),platform=Windows NT 10.0.19044 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UJM8HNV', ip: '192.168.43.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53462}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 105.0.5195.102 (4c16f5ffcc2..., userDataDir: C:\Users\ntci\AppData\Local...}, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 105.0.5195.102, webStorageEnabled: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9076ad90bdec68fe0635bb41eaa12efa
+*** Element info: {Using=xpath, value=//input[@id='username']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
+  (Session info: chrome=105.0.5195.102)
+  (Driver info: operadriver=105.0.5195.102 (4c16f5ffcc2da70ee2600d5db77bed423ac03a5a-refs/branch-heads/5195_55@{#4}),platform=Windows NT 10.0.19044 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UJM8HNV', ip: '192.168.43.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.opera.OperaDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53462}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 105.0.5195.102 (4c16f5ffcc2..., userDataDir: C:\Users\ntci\AppData\Local...}, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 105.0.5195.102, webStorageEnabled: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9076ad90bdec68fe0635bb41eaa12efa
+*** Element info: {Using=xpath, value=//input[@id='username']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at SGBAU.AdministrationLogin.sendUserName(AdministrationLogin.java:36)
+at SGBAUTest.Administration.AdministrationLoginValidation(Administration.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdministrationLoginValidation -->
+        <test-method is-config="true" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:44 OMST" name="TakeScreenshot" finished-at="2022-09-21T18:48:44 OMST" duration-ms="548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AdministrationLoginValidation status=FAILURE method=Administration.AdministrationLoginValidation()[pri:2, instance:SGBAUTest.Administration@7c7b252e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+        <test-method is-config="true" signature="clearoPOMbject()[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:44 OMST" name="clearoPOMbject" finished-at="2022-09-21T18:48:44 OMST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearoPOMbject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:SGBAUTest.Administration@7c7b252e]" started-at="2022-09-21T18:48:48 OMST" name="closedBrowser" finished-at="2022-09-21T18:48:49 OMST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- SGBAUTest.Administration -->
+      <class name="SGBAUTest.StudentValidation">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:47:39 OMST" name="launchbrowser" finished-at="2022-09-21T18:48:39 OMST" duration-ms="59895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="objectPOMclass()[pri:0, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:40 OMST" name="objectPOMclass" finished-at="2022-09-21T18:48:40 OMST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectPOMclass -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:40 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:40 OMST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="StudentLogin()[pri:1, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:40 OMST" name="StudentLogin" finished-at="2022-09-21T18:48:41 OMST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLogin -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:44 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:44 OMST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="StudentLoginValidation()[pri:2, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:44 OMST" name="StudentLoginValidation" finished-at="2022-09-21T18:48:48 OMST" duration-ms="3798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLoginValidation -->
+        <test-method is-config="true" signature="cleanPOMobject()[pri:0, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:48 OMST" name="cleanPOMobject" finished-at="2022-09-21T18:48:48 OMST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPOMobject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:SGBAUTest.StudentValidation@7cc0cdad]" started-at="2022-09-21T18:48:49 OMST" name="closedBrowser" finished-at="2022-09-21T18:48:49 OMST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- SGBAUTest.StudentValidation -->
+    </test> <!-- OperaBrowser -->
+    <test started-at="2022-09-21T18:46:48 OMST" name="ChromeBrowser" finished-at="2022-09-21T18:49:32 OMST" duration-ms="163924">
+      <class name="SGBAUTest.Administration">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:46:48 OMST" name="launchbrowser" finished-at="2022-09-21T18:48:08 OMST" duration-ms="80485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="objectsPOMclass()[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:48:42 OMST" name="objectsPOMclass" finished-at="2022-09-21T18:48:42 OMST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectsPOMclass -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:48:42 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:42 OMST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="AdministrationLogin()[pri:1, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:48:42 OMST" name="AdministrationLogin" finished-at="2022-09-21T18:48:42 OMST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdministrationLogin -->
+        <test-method is-config="true" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:48:42 OMST" name="TakeScreenshot" finished-at="2022-09-21T18:48:43 OMST" duration-ms="553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AdministrationLogin status=SUCCESS method=Administration.AdministrationLogin()[pri:1, instance:SGBAUTest.Administration@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:48:43 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:43 OMST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="AdministrationLoginValidation()[pri:2, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:48:43 OMST" name="AdministrationLoginValidation" finished-at="2022-09-21T18:49:08 OMST" duration-ms="24831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdministrationLoginValidation -->
+        <test-method is-config="true" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:49:08 OMST" name="TakeScreenshot" finished-at="2022-09-21T18:49:08 OMST" duration-ms="596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AdministrationLoginValidation status=SUCCESS method=Administration.AdministrationLoginValidation()[pri:2, instance:SGBAUTest.Administration@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+        <test-method is-config="true" signature="clearoPOMbject()[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:49:08 OMST" name="clearoPOMbject" finished-at="2022-09-21T18:49:08 OMST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearoPOMbject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:SGBAUTest.Administration@36bc55de]" started-at="2022-09-21T18:49:31 OMST" name="closedBrowser" finished-at="2022-09-21T18:49:31 OMST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- SGBAUTest.Administration -->
+      <class name="SGBAUTest.StudentValidation">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:48:08 OMST" name="launchbrowser" finished-at="2022-09-21T18:48:42 OMST" duration-ms="33951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="objectPOMclass()[pri:0, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:48:43 OMST" name="objectPOMclass" finished-at="2022-09-21T18:48:43 OMST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectPOMclass -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:48:43 OMST" name="SGBAUPage" finished-at="2022-09-21T18:48:43 OMST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="StudentLogin()[pri:1, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:48:43 OMST" name="StudentLogin" finished-at="2022-09-21T18:48:43 OMST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLogin -->
+        <test-method is-config="true" signature="SGBAUPage()[pri:0, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:49:08 OMST" name="SGBAUPage" finished-at="2022-09-21T18:49:08 OMST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SGBAUPage -->
+        <test-method signature="StudentLoginValidation()[pri:2, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:49:08 OMST" name="StudentLoginValidation" finished-at="2022-09-21T18:49:31 OMST" duration-ms="22211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLoginValidation -->
+        <test-method is-config="true" signature="cleanPOMobject()[pri:0, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:49:31 OMST" name="cleanPOMobject" finished-at="2022-09-21T18:49:31 OMST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPOMobject -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:SGBAUTest.StudentValidation@2d7275fc]" started-at="2022-09-21T18:49:31 OMST" name="closedBrowser" finished-at="2022-09-21T18:49:32 OMST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- SGBAUTest.StudentValidation -->
+    </test> <!-- ChromeBrowser -->
+  </suite> <!-- Suite -->
+</testng-results>
